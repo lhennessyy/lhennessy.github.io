@@ -1,0 +1,129 @@
+ body {
+    width:100%;
+    overflow-x: hidden;
+    font-size:30px;
+    background-color: blue;
+    color:white;
+    font-family: 'Stick No Bills', sans-serif;
+} 
+
+.flex-container div{
+    text-align: start; 
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    align-items:baseline;
+
+}
+
+.item-1{
+    flex:3;
+    order: 2;
+}
+
+.item-2{
+    flex:3;
+    order: 1;
+}
+
+.item-3{
+    flex:1;
+    order: 2;
+}
+
+h1,h3{
+    text-align: center;
+}
+
+
+
+a{
+    color:orange;
+    text-decoration: none;  
+}
+
+li{
+    font-size:17.5px;
+    list-style-type: none;
+}
+
+ul{
+    padding-inline-start: 0px;
+}
+
+.para{
+    width:50%;
+    margin: 1% auto;
+}
+
+#dear{
+    
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    background-color: orange;
+    text-decoration: none;
+    color: initial;
+    padding: 5px;
+    border-radius: 2.5%;
+}
+
+a.button:hover {
+ background-color: white;
+}
+
+
+@media only screen and (max-width: 1120px) {
+    .flex-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        
+    }
+    li{
+        font-size:25px;
+    }
+
+    .flex-container div{
+        text-align: center; 
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    li{
+        font-size:20px;
+    }
+
+    h2{
+        font-size:25px;
+    }
+
+}
+
+
+@media only screen and (max-width: 550px) {
+
+    li{
+        font-size:17px;
+    }
+
+    h2{
+        font-size:20px;
+    }
+
+  }
